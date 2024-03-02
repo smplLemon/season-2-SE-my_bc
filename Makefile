@@ -1,12 +1,12 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror - g3 -fsanitize=address
-SRC = my_bsq.c
-TARGET = my_bsq* c/my_string.c
+CFLAGS = -Wall -Wextra -Werror -g3 -fsanitize=address
+TARGET = my_bsq
+SRC = my_bsq* c/my_string.c c/map.c
 
 $(TARGET): $(SRC)
 	@$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
 
-.PHONY:fclean
+.PHONY: fclean
 
 fclean:
 	@rm -rf $(TARGET)
