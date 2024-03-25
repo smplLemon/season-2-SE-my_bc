@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -g3 -fsanitize=address
-SRC = my_bc* c/my_string.c
+SRC = my_bc* c/check_function.c c/my_string.c c/queue_stack.c
 TARGET = my_bc
 
 $(TARGET): $(SRC)
