@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include "./source/my_string_lib.h"
+#include "./source/my_string.h"
 #include "./source/stack_struct.h"
 #include "./source/queue_struct.h"
-#include "./source/check_functions.h"
+#include "./source/check.h"
 
 stack* stack_list = NULL;
 queues* queue_list = NULL;
