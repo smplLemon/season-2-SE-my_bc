@@ -1,6 +1,6 @@
 CC = gcc 
 CFLAGS = -Wall -Wextra -Werror -g3 -fsanitize=address
-SRC = source/*.c bc.c
+SRC = source/*.c my_bc.c
 TARGET = my_bc
 
 $(TARGET): $(SRC)
